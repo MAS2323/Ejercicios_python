@@ -109,3 +109,28 @@ cantidad = float(input("¿Cantidad a invertir? "))
 interes = float(input("¿Interés porcentual anual? "))
 años = int(input("¿Años?"))
 print("Capital final: " + str(round(cantidad * (interes / 100 + 1) ** años, 2)))
+
+# Ejercicio 10
+# Una juguetería tiene mucho éxito en dos de sus productos: payasos y muñecas.
+# Suele hacer venta por correo y la empresa de logística les cobra por peso
+# de cada paquete así que deben calcular el peso de los payasos y muñecas que
+# saldrán en cada paquete a demanda. Cada payaso pesa 112 g y cada muñeca 75 g.
+# Escribir un programa que lea el número de payasos y muñecas vendidos en el último
+# pedido y calcule el peso total del paquete que será enviado.
+
+print("Programa para calcule el peso total del paquete que será enviado")
+
+numMpayasos = int(input("Introduzca un numero de payasos "))
+numMuneca = int(input("Introduzca el numero de muñeca "))
+
+pesoTotal = numMpayasos * 112 + numMuneca * 75
+print(f"El peso total del paquete a enviar es {pesoTotal}")
+
+# Ejercicio 11
+# Imagina que acabas de abrir una nueva cuenta de ahorros que te ofrece
+# el 4% de interés al año. Estos ahorros debido a intereses, que no se
+# cobran hasta finales de año, se te añaden al balance final de tu cuenta
+# de ahorros. Escribir un programa que comience leyendo la cantidad de dinero
+# depositada en la cuenta de ahorros, introducida por el usuario. Después el
+# programa debe calcular y mostrar por pantalla la cantidad de ahorros tras
+# el primer, segundo y tercer años. Redondear cada cantidad a dos decimales.
