@@ -55,7 +55,7 @@ print("La suma enesima del ", numero, "es: ", suma)
 # masa corporal es <imc> donde <imc> es el índice de masa corporal calculado
 # redondeado con dos decimales.
 """
-El índice de masa corporal (IMC) es el peso de una persona en 
+El índice de masa corporal (IMC) es el peso de una persona en
 kilogramos dividido por el cuadrado de la estatura en metros.
 """
 
@@ -98,9 +98,9 @@ capiObtenido = cantidad * interanual * numagnos
 print(f"El capital obtenido es: {capiObtenido}")"""
 
 """
-La función round en python redondea el valor decimal 
-de un número a su entero más cercano. Por ejemplo: round(65.66) = 66. 
-Además, se puede entregar a la función el número de decimales al que 
+La función round en python redondea el valor decimal
+de un número a su entero más cercano. Por ejemplo: round(65.66) = 66.
+Además, se puede entregar a la función el número de decimales al que
 se debe redondear el número especificado. Por ejemplo, round(65.66, 1) = 65.7.
 
 """
@@ -134,3 +134,30 @@ print(f"El peso total del paquete a enviar es {pesoTotal}")
 # depositada en la cuenta de ahorros, introducida por el usuario. Después el
 # programa debe calcular y mostrar por pantalla la cantidad de ahorros tras
 # el primer, segundo y tercer años. Redondear cada cantidad a dos decimales.
+
+print("Escribir un programa que comience leyendo la cantidad de dinero depositada en la cuenta de ahorros")
+
+cantidad = float(input("Introduce la cantidad de dinero que ingresaste: "))
+
+ahorro1 = cantidad * 0.04 + cantidad
+ahorro2 = ahorro1 * 0.04 + ahorro1
+ahorro3 = ahorro2 * 0.04 + ahorro2
+print(f"Los ahorros cosechados en el primer año son {
+      ahorro1}, en el segundo año {(ahorro2)} y en el tercer año {ahorro3}")
+
+# Ejercicio 12
+# Una panadería vende barras de pan a 3.49€ cada una. El pan que no es el día
+# tiene un descuento del 60%. Escribir un programa que comience leyendo el número
+# de barras vendidas que no son del día. Después el programa debe mostrar el
+# precio habitual de una barra de pan, el descuento que se le hace por no
+# ser fresca y el coste final total.
+
+print("Escribir un programa que comience leyendo el número de barras vendidas que no son del día")
+
+cantidadPan = int(input("Introduce el número de barras vendidos: "))
+precio = 3.49
+panDiaPreal = cantidadPan * precio
+panDiaDescuento = panDiaPreal * 0.6
+precioPagar = panDiaPreal - panDiaDescuento
+print(f"el precio habitual de una barra de pan es de {
+      precio} el coste final es el siguiente {round(precioPagar, 2)}")
