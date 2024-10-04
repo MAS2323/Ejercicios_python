@@ -55,3 +55,34 @@ print(frase[:: -1])
 # Ejercicio 6
 # Escribir un programa que pida al usuario que introduzca una frase en la consola y
 # una vocal, y después muestre por pantalla  la misma frase pero con la vocal introducida en mayúscula.
+
+"""frace = input('Introduce una frace por consola y una vocal: ')
+voacl = input('Introduce una vocal: ')
+
+print(f'{frase} {voacl.upper()}')
+"""
+
+frase = input("Introduce una frase: ")
+vocal = input("Introduce una vocal en minúscula:  ")
+print(frase.replace(vocal, vocal.upper()))
+
+# Ejercicio 7
+# Escribir un programa que pregunte el correo electrónico del usuario en
+# la consola y muestre por pantalla otro correo electrónico con el mismo nombre
+# (la parte delante de la arroba @) pero con dominio ceu.es.
+
+email = input("Introduce tu correo electrónico: ")
+print(email[:email.find('@')] + '@ceu.es')
+
+correo = input('Introduzca su correo electronico: ')
+resul = correo.replace("@", '@ceu.es')
+
+print(resul)
+
+# Ejercicio 8
+# Escribir un programa que pregunte por consola el precio de un producto en euros
+# con dos decimales y muestre por pantalla el número de euros y el número de céntimos del precio introducido.
+
+precio = input("Introduce el precio del producto con dos decimales:  ")
+print(precio[:precio.find('.')], 'euros y',
+      precio[precio.find('.')+1:], 'céntimos.')
